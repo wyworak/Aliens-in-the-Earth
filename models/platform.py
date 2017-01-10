@@ -9,6 +9,7 @@ from files import constants as c
 from models import entity
 
 class Platform(entity.Entity):
+    'representa os blocos onde o jogador e os inimigos podem andar'
     def __init__(self, x, y):
         entity.Entity.__init__(self)
         self.image = pygame.image.load("resources/graphics/block.png").convert()
